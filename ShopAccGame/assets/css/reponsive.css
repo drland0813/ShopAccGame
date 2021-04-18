@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+/*mobiel and tablet*/
+@media only screen and (max-width: 1023px){
+    :root{
+       --white-color: #fff;
+    }
+	.hide-on-mobile-tablet{
+		display: none;
+    }
+    .slider__content{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .btn__menu{
+        display: inline;
+    }
+    .fake_about__us{
+        display: block;
+    }
+    /* account */
+    .account{
+        display: block;
+        padding-bottom: 26px;
+    }
+    .rank{
+        min-width: 280px;
+        margin-left: 00px;
+    }
+    .rank img{
+        display: block;
+        width: 180px;
+        margin: 0 auto;
+    }
+    .account__list{
+        margin: 0 0 0 0 !important;
+    }
+    .account__price{
+        border: unset;
+        margin-top: 0%;
+        padding: unset;
+        text-align: center;
+    }
+    .account__item{
+        text-align: center!important;
+    }
+    .account__buy{
+        margin: unset;
+    }
+}
+/*tablet*/
+@media only screen and (max-width: 1023px) and (min-width: 740px){
+
+	.hide-on-tablet{
+		display: none;
+    }
+    .topic{
+        margin: 80px auto 50px;
+    }
+    .topic::after,.topic::before{
+        width: 180px;
+    }
+    .product__game{
+        width: 45%;
+        padding-top: 24.3%;
+        margin-top: 26px;
+    }
+    .contact__form{
+        width: 90%;
+    }
+    .slider__pro{
+        height: 100vh;
+    }
+    
+}
+/*mobile*/
+@media only screen and (max-width: 739px){
+   
+	.hide-on-mobile{
+		display: none;
+    }
+    .logo{
+        width: 120px;
+    }
+    .slider__content{
+        scale: 0.8;
+    }
+    .topic{
+        margin: 60px auto 40px;
+    }
+    .topic::after,.topic::before{
+        width: 150px;
+    }
+    .product__game{
+        width: 70%;
+        padding-top: 37.8%;
+        margin-top: 26px;
+    }
+    .slider__pro{
+        height: 70vh;
+    }
+}
+/*low pc*/
+@media only screen and (max-width: 1295px) and (min-width: 1173px){
+
+	
+}
+@media only screen and (max-width: 1172px) and (min-width: 1024px){
+    .hide-on-low-pc{
+        display: none;
+    }
+	.slider__champ{
+        width: 70%;
+        transform: translateY(-0%);
+    }
+	
+}

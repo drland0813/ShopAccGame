@@ -1,0 +1,17 @@
+@keyframes test{
+	0%{
+
+		stroke-dashoffset:220;
+	}
+	40%{
+		
+		stroke-dashoffset:150;
+	}
+	80%{
+		stroke-dashoffset:80;
+		fill:transparent;
+	}
+	100%{
+		stroke-dashoffset:0;
+	}
+}
