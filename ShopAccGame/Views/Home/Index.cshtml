@@ -1,31 +1,223 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Index";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <!-- font library -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- css reset -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <!-- grid library -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- base css -->
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <!-- animation library -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <!-- reponsive for device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="slider">
+                <div class="slider__content">
+                    <h1 class="slider__title">WELCOME</h1>
+                    <div class="slider__info">
+                        <p class="slider__info2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="slider__info2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="slider__info2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="slider__info2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="slider__info2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <!-- <p class="slider__info2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+                    </div>
+                    <div class="slider__video">
+                        <img src="./assets/img/slider-video-frame.png" alt="">
+                        <video src="./assets/video/champ__left_video.webm" autoplay muted loop></video>
+                    </div>
+                </div>
+                <img class="slider__champ hide-on-mobile-tablet" src="./assets/img/choigame.jpg" alt="">
+                <img class="slider__13" src="./assets/img/13.png" alt="">
+            </div>
+            <div class="conatiner__main">
+                <p class="topic">PRODUCT</p>
+                <div class="product">
+                    <a href="https://playvalorant.com/vi-vn/" target="blank" class="product__game" style="background-image: url(./assets/img/vanlorant.png);">
+                        <video class="product__game-video" src="./assets/video/vanlorant.mp4" autoplay muted loop></video>
+                    </a>
+                    <a href="https://na.leagueoflegends.com/en-us/" class="product__game" style="background-image: url(./assets/img/lmht.png);">
+                        <video class="product__game-video" src="./assets/video/lmht.mp4" autoplay muted loop></video>
+                    </a>
+                    <a href="https://www.epicgames.com/store/en-US/" class="product__game" style="background-image: url(./assets/img/epic.png);">
+                        <video class="product__game-video" src="./assets/video/epic.mp4" autoplay muted loop></video>
+                    </a>
+                </div>
+                <p class="topic">about us</p>
+                <div class="about__us">
+                    <div class="grid wide hide-on-mobile-tablet">
+                        <div class="row">
+                            <div class="col c-5 m-5 l-5">
+                                <div class="about__us-tl">
+                                    <p>lower prices</p>
+                                    <p>Our good services' prices are much more lower than other websites.</p>
+                                </div>
+                                <div class="about__us-bl">
+                                    <p>Our good services' prices are much more lower than other websites.</p>
+                                    <p>lower prices</p>
+                                    <img src="./assets/img/about-us-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col c-7 m-7 l-7">
+                                <div class="about__us-tr">
+                                    <p>lower prices</p>
+                                    <p>Our good services' prices are much more lower than other websites.</p>
+                                    <img src="./assets/img/about-us-2.png" alt="">
+                                </div>
+                                <div class="about__us-br">
+                                    <p>Our good services' prices are much more lower than other websites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="fake_about__us" src="./assets/img/about-us-mobile-tablet.png" alt="">
+                </div>
+                <p class="topic" style="margin-bottom: unset;">news</p>
+                <div class="news">
+                    <div class="news__hold">
+                        <div class="news__hold-content">
+                            <div class="news__hold-pic" style="background-image: url(./assets/img/news-1.jfif);"></div>
+                            <h3 class="new__hold-tittle">Smoothest Gamer</h3>
+                            <div class="news__hold-border"></div>
+                        </div>
+                        <div class="news__hold-content">
+                            <div class="news__hold-pic" style="background-image: url(./assets/img/news-2.jfif);"></div>
+                            <h3 class="new__hold-tittle">Smoothest Gamer</h3>
+                            <div class="news__hold-border"></div>
+                        </div>
+                        <div class="news__hold-content">
+                            <div class="news__hold-pic" style="background-image: url(./assets/img/news-3.jfif);"></div>
+                            <h3 class="new__hold-tittle">Smoothest Gamer</h3>
+                        </div>
+                    </div>
+                    <div class="news__slider">
+                        <h2>Smoothest Gamer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum metus sociis neque sed. Malesuada et, euismod sit ultricies enim vulputate a est. Id eget in libero pharetra, eget nec et. Consequat arcu, viverra mattis nec sed odio porttitor natoque.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum metus sociis neque sed. Malesuada et, euismod sit ultricies enim vulputate a est. Id eget in libero pharetra, eget nec et. Consequat arcu, viverra mattis nec sed odio porttitor natoque.</p>
+                    </div>
+                    <div class="news__wolf"></div>
+                </div>
+                <div class="contact" id="contact">
+                    <p>if you want to sell your accout or you have any questions please give us your number</p>
+                    <form action="">
+                        <div class="contact__form">
+                            <div class="contact__pre">84+</div>
+                            <input class="contact__input" type="tel">
+                            <button class="contact__btn"><i class="far fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end main -->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <ul class="col c-12 m-6 l-3 footer__list">
+                        <li class="footer__item"><a href="" class="footer__link"><h2>LIÊN HỆ</h2></a></li>
+                        <li class="footer__item"><a href="" class="footer__link">GMAIL</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">PHONE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">SKYPE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">FACEBOOK</a></li>
+                    </ul>
+                    <ul class="col c-12 m-6 l-3 footer__list">
+                        <li class="footer__item"><a href="" class="footer__link"><h2>LIÊN HỆ</h2></a></li>
+                        <li class="footer__item"><a href="" class="footer__link">GMAIL</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">PHONE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">SKYPE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">FACEBOOK</a></li>
+                    </ul>
+                    <ul class="col c-12 m-6 l-3 footer__list">
+                        <li class="footer__item"><a href="" class="footer__link"><h2>LIÊN HỆ</h2></a></li>
+                        <li class="footer__item"><a href="" class="footer__link">GMAIL</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">PHONE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">SKYPE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">FACEBOOK</a></li>
+                    </ul>
+                    <ul class="col c-12 m-6 l-3 footer__list">
+                        <li class="footer__item"><a href="" class="footer__link"><h2>LIÊN HỆ</h2></a></li>
+                        <li class="footer__item"><a href="" class="footer__link">GMAIL</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">PHONE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">SKYPE</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">FACEBOOK</a></li>
+                    </ul>
+                </div>
+                <p class="copy__right">copyright © 2010 - 2021 13proplayer. All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- <div class="a">
+            <div class="aa show-on-scroll"></div>
+        </div> -->
+        <!-- end footer -->
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <!-- end all -->
+</body>
+</html>
+
+<script>
+    // Detect request animation frame
+    var scroll = window.requestAnimationFrame ||
+        // IE Fallback
+        function (callback) { window.setTimeout(callback, 1000 / 60) };
+    var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+    function loop() {
+
+        Array.prototype.forEach.call(elementsToShow, function (element) {
+            if (isElementInViewport(element)) {
+                element.classList.add('is-visible');
+            } else {
+                element.classList.remove('is-visible');
+            }
+        });
+
+        scroll(loop);
+    }
+
+    // Call the loop for the first time
+    loop();
+
+    // Helper function from: http://stackoverflow.com/a/7557433/274826
+    function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+            (rect.top <= 0
+                && rect.bottom >= 0)
+            ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+            ||
+            (rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+    }
+</script>
+

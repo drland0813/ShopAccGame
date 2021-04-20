@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,9 +129,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataRequester\AccountDAO.cs" />
+    <Compile Include="Models\MyData\Account.cs" />
+    <Compile Include="Models\MyData\Game.cs" />
+    <Compile Include="Models\MyData\MyDatabase.cs" />
+    <Compile Include="Models\MyData\Payment.cs" />
+    <Compile Include="Models\MyData\User_.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,14 +166,14 @@
     <Content Include="assets\img\a\water1.png" />
     <Content Include="assets\img\a\water3.png" />
     <Content Include="assets\img\a\white-man.png" />
-    <Content Include="assets\img\bac.png" />
-    <Content Include="assets\img\bach-kim.png" />
+    <Content Include="assets\img\Silver.png" />
+    <Content Include="assets\img\Platinum.png" />
     <Content Include="assets\img\BG.png" />
     <Content Include="assets\img\choigame.jpg" />
-    <Content Include="assets\img\dai-cao-thu.png" />
+    <Content Include="assets\img\Grand_Master.png" />
     <Content Include="assets\img\epic.png" />
-    <Content Include="assets\img\khong-rank.png" />
-    <Content Include="assets\img\kim-cuong.png" />
+    <Content Include="assets\img\Rankless.png" />
+    <Content Include="assets\img\Diamond.png" />
     <Content Include="assets\img\lmht.png" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\news-1.jfif" />
@@ -175,7 +191,7 @@
     <Content Include="assets\img\Slide 16_9 - 2.png" />
     <Content Include="assets\img\slider-bg.jpg" />
     <Content Include="assets\img\slider-video-frame.png" />
-    <Content Include="assets\img\vang.png" />
+    <Content Include="assets\img\Gold.png" />
     <Content Include="assets\img\vanlorant.png" />
     <Content Include="assets\video\champ__left_video.webm" />
     <Content Include="assets\video\epic.mp4" />
@@ -189,11 +205,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="index.html" />
-    <Content Include="login.html" />
-    <Content Include="product.html" />
-    <Content Include="register.html" />
-    <Content Include="riot.html" />
+    <Content Include="Views\Login\login.html" />
+    <Content Include="Views\Home\register.html" />
+    <Content Include="Views\Home\riot.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\img\a\water2.webp" />
@@ -219,14 +233,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\font\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
