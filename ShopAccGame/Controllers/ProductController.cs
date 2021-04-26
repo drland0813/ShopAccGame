@@ -10,7 +10,7 @@ namespace ShopAccGame.Controllers
     public class ProductController : Controller
     {
 
-        public static readonly string[] ranks = new string[]
+        public static readonly string[] RANKS = new string[]
         {
             "Iron",
             "Copper",
@@ -31,7 +31,7 @@ namespace ShopAccGame.Controllers
             AccountDAO accountDAO = new AccountDAO();
             ICollection<Account> lolAccounts = accountDAO.getListAccounts();
             ViewData["lolAccounts"] = lolAccounts;
-            ViewData["ranks"] = ranks;
+            ViewData["ranks"] = RANKS;
             return View();
         }
     }
