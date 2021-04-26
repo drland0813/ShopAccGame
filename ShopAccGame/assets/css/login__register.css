@@ -1,0 +1,185 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(#2b1055,#7597de); */
+    background-image: linear-gradient(-147deg, #923cb5 0%, rgba(0,0,0,1) 74%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/b/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: bg-opacity 5s linear forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+
+@keyframes bg-opacity {
+    to {
+        opacity: 1;
+    }
+}
+
+.dragon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(51894px / 27);
+    background: url(../img/b/dragon-head2.png);
+    height: 1082px;
+    zoom: 1;
+    background-position: 0;
+    animation: dragon-head 4.1s steps(27) infinite;
+    zoom: 0.86;
+    transform: translateY(-100px);
+}
+
+@keyframes dragon-head {
+    to {
+        background-position: -51894px;
+    }
+}
+
+
+.login {
+    position: absolute;
+    top: 32%;
+    left: 55%;
+    position: relative;
+    z-index: 1000;
+    max-width: 140px;
+    animation: login-animate 1.5s forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+
+.register {
+    position: absolute;
+    top: 29%;
+    left: 55%;
+    position: relative;
+    z-index: 1000;
+    max-width: 140px;
+    animation: login-animate 1.5s forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+
+.register__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.login__title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+@keyframes login-animate {
+    80% {
+        opacity: 1;
+        /* top: 43%; */
+    }
+
+    100% {
+        opacity: 1;
+        /* top: 42%; */
+    }
+}
+
+.dragon__hand {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 133px);
+    transform: translate(-50%, -50%);
+    background-image: url(../img/b/dragon.png);
+    height: calc((32768px * 1.25) / 57);
+    width: calc(1022px * 1.25);
+    background-size: cover;
+    animation: dragon-hand 1.5s steps(57) forwards;
+    animation-delay: 2.5s;
+    z-index: 10000;
+}
+
+@keyframes dragon-hand {
+    0% {
+        background-position-y: -0;
+    }
+
+    99.99999999999999% {
+        background-position-y: calc(-32768px * 1.25);
+    }
+
+    100% {
+        background-position-y: calc(-32193px * 1.25);
+    }
+}
+/* .dragon__hand{
+    position: absolute;
+    top: 50%;
+    left:calc(50% + 55px);
+    transform: translate(-50%, -50%);
+    background-image: url(../img/b/dragon-hand.png);
+    height:calc((32768px * 1.25)  / 66) ;
+    width:calc(883px * 1.25) ;
+    background-size: cover;
+    animation: dragon-hand 1.5s steps(66) forwards; 
+    animation-delay: 2.5s;
+    z-index: 10000;
+}
+
+@keyframes dragon-hand{
+    0%{
+    background-position-y:-0 ;
+
+    }
+    99.99999999999999%{
+        background-position-y:calc(-32768px * 1.25);
+    }
+    100%{
+        background-position-y:calc(-32193px * 1.25);
+    }
+  
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .test2{
+    background-image: url(../img/b/spritesheet.png);
+    height: 128px;
+    width: calc(512px /4);
+    background-position: 0;
+    animation: ss 0.25s steps(4) infinite;
+}
+@keyframes ss{
+    to{
+    background-position: -512px;
+
+    }
+} */

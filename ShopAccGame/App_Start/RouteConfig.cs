@@ -18,7 +18,11 @@ namespace ShopAccGame
                url: "lol-account",
                defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional }
            );
-
+            routes.MapRoute(
+              name: "Register",
+              url: "register",
+              defaults: new { controller = "register", action = "Index", id = UrlParameter.Optional }
+          );
             routes.MapRoute(
                name: "Login",
                url: "login",

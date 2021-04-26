@@ -131,6 +131,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -166,6 +167,16 @@
     <Content Include="assets\img\a\water1.png" />
     <Content Include="assets\img\a\water3.png" />
     <Content Include="assets\img\a\white-man.png" />
+    <Content Include="assets\img\b\background.png" />
+    <Content Include="assets\img\b\bg.png" />
+    <Content Include="assets\img\b\dragon-face.png" />
+    <Content Include="assets\img\b\dragon-hand.png" />
+    <Content Include="assets\img\b\dragon-head2.png" />
+    <Content Include="assets\img\b\dragon.png" />
+    <Content Include="assets\img\b\test1.png" />
+    <Content Include="assets\img\Master.png" />
+    <Content Include="assets\img\Copper.png" />
+    <Content Include="assets\img\Iron.png" />
     <Content Include="assets\img\Silver.png" />
     <Content Include="assets\img\Platinum.png" />
     <Content Include="assets\img\BG.png" />
@@ -192,6 +203,7 @@
     <Content Include="assets\img\slider-bg.jpg" />
     <Content Include="assets\img\slider-video-frame.png" />
     <Content Include="assets\img\Gold.png" />
+    <Content Include="assets\img\Challenger.png" />
     <Content Include="assets\img\vanlorant.png" />
     <Content Include="assets\video\champ__left_video.webm" />
     <Content Include="assets\video\epic.mp4" />
@@ -206,7 +218,6 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Login\login.html" />
-    <Content Include="Views\Home\register.html" />
     <Content Include="Views\Home\riot.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -236,6 +247,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
