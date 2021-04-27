@@ -166,7 +166,7 @@ namespace ShopAccGame.Controllers
                 PaypalLogger.Log("Error: " + ex.Message);
                 return View("Failure");
             }
-            @account.state = 2;
+            //@account.state = 2;
             return View("Success");
         }
     }
