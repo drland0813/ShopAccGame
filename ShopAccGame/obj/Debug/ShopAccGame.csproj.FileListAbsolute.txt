@@ -325,4 +325,3 @@ D:\QLDA\ShopAccGame\ShopAccGame\obj\Debug\ShopAccGame.csproj.CoreCompileInputs.c
 D:\QLDA\ShopAccGame\ShopAccGame\obj\Debug\ShopAccGame.csproj.CopyComplete
 D:\QLDA\ShopAccGame\ShopAccGame\obj\Debug\ShopAccGame.dll
 D:\QLDA\ShopAccGame\ShopAccGame\obj\Debug\ShopAccGame.pdb
-D:\QLDA\ShopAccGame\ShopAccGame\obj\Debug\ShopAccGame.csprojAssemblyReference.cache
