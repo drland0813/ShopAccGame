@@ -20,7 +20,7 @@ namespace ShopAccGame.Models.MyData
         [StringLength(150)]
         public string fullname { get; set; }
 
-        [Required]
+       
         [StringLength(50)]
         public string username { get; set; }
 

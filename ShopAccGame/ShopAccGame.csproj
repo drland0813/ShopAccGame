@@ -137,6 +137,7 @@
     </Compile>
     <Compile Include="Models\DataRequester\AccountDAO.cs" />
     <Compile Include="Models\MyData\Account.cs" />
+    <Compile Include="Models\MyData\Encrytion.cs" />
     <Compile Include="Models\MyData\Game.cs" />
     <Compile Include="Models\MyData\MyDatabase.cs" />
     <Compile Include="Models\MyData\Payment.cs" />

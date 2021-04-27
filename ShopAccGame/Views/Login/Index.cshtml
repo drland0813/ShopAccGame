@@ -31,14 +31,18 @@
     <div class="dragon__hand">
         <div class="login">
             <h3 class="login__title">login</h3>
-            <form action="" class="login__form">
-                <h3 class="login__input">Name</h3>
-                <input class="login__label" type="text">
+            @if(ViewBag.Message != null)
+            {
+                @ViewBag.Message
+            }
+            <form action="/Login" class="login__form" method="post">
+                <h3 class="login__input">Email</h3>
+                <input class="login__label" type="text" name="email">
                 <h3 class="login__label">Password</h3>
-                <input class="login__input" type="password">
+                <input class="login__input" type="password" name="password">
                 <br>
                 <br>
-                <button class="btn__login">login</button>
+                <input type="submit" name="btn" value="Login" />
             </form>
             <p>Don't you have an account? <a href="~/register">Register</a></p>
         </div>

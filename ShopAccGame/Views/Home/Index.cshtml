@@ -119,25 +119,35 @@
             </li>
             <li class="header__item"><a href="#contact" class="header__link hide-on-low-pc">CONTACT</a></li>
         </ul>
-        <ul class="header__list">
-            <li class="header__item" style="transform: translateX(26px);">
-                <a href="~/login" class="header__link">
-                    <svg class="account__icon" width="37" height="37" viewBox="0 0 37 37" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
-                        <path d="M1.08828 20.3139L11.9706 18.1373C11.9706 18.1373 10.8824 9.7941 18.5 9.79411C26.1177 9.79411 25.0294 18.1373 25.0294 18.1373L35.9118 20.3139"
-                              stroke="white" stroke-width="2" />
-                        <circle cx="18.5" cy="15.5" r="3.5" stroke="white" stroke-width="2" />
-                    </svg>
-                </a>
-            </li>
-            <li class="header__item"><a href="~/login" class="header__link">LOGIN</a></li>
-            <li class="header__item btn__menu">
-                <label for="rdo__menu" style="cursor: pointer;">
-                    <i class="fas fa-bars"></i>
-                </label>
-            </li>
-        </ul>
+        @if (Session["fullname"] == null)
+        {
+            <ul class="header__list">
+                <li class="header__item" style="transform: translateX(26px);">
+                    <a href="~/login" class="header__link">
+                        <svg class="account__icon" width="37" height="37" viewBox="0 0 37 37" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+                            <path d="M1.08828 20.3139L11.9706 18.1373C11.9706 18.1373 10.8824 9.7941 18.5 9.79411C26.1177 9.79411 25.0294 18.1373 25.0294 18.1373L35.9118 20.3139"
+                                  stroke="white" stroke-width="2" />
+                            <circle cx="18.5" cy="15.5" r="3.5" stroke="white" stroke-width="2" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__item"><a href="~/login" class="header__link">LOGIN</a></li>
+                <li class="header__item btn__menu">
+                    <label for="rdo__menu" style="cursor: pointer;">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </li>
+            </ul>
+        }
+        else
+        {
+            <ul class="header__list">
+                <li class="header__item"><a href="" class="header__link">@Session["fullname"]</a></li>
+            </ul>
+            
+        }
     </header>
     <nav class="mobile__nav">
         <div class="header__logo">
@@ -360,4 +370,5 @@
         );
     }
 </script>
+
 

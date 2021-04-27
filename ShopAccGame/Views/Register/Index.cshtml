@@ -33,16 +33,19 @@
     <div class="dragon__hand">
         <div class="register">
             <h3 class="register__title">register</h3>
-            <form action="" class="register__form">
+            <form action="/register" class="register__form" method="post">
+
+                <h3 class="register__input">FullName</h3>
+                <input class="register__label" type="text" name="fullname">
                 <h3 class="register__input">Email</h3>
-                <input class="register__label" type="text">
+                <input class="register__label" type="text" name="email">
                 <h3 class="register__label">Password</h3>
-                <input class="register__input" type="password">
+                <input class="register__input" type="password" name="password">
                 <h3 class="register__label">Re-enter password</h3>
                 <input class="register__input" type="password">
                 <br>
                 <br>
-                <button class="btn__register">register</button>
+                <input type="submit" name="btn-sub" value="Đăng Ký" />
             </form>
             <p>If you have an account? <a href="~/login">Login</a></p>
         </div>
